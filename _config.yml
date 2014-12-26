@@ -65,22 +65,26 @@ heroButtons:
  - {permalink: "", text: ""}
 
 # About Block
-aboutTitle: "About GDG DevFest"
+aboutTitle: "Dj Albert Olivé"
 aboutBlock:
- - {title: "Conference", image: "conference.jpg", text: "The biggest Google related event in the country carefully crafted for you by GDG community! Awesome speakers and lots of fun!" }
- - {title: "Workshops", image: "workshop.jpg", text: "Full-day of workshops, hands-on experience, hacking and debugging. Come and tame your favourite technology!" }
- - {title: "Hackathon", image: "hackathon.jpg", text: "Full-day freestyle hackathon! Want some real team building on friday? Grab your team and join our hackathon!" }
+ - {title: "About", image: "about.jpg", text: "Albert Olivé Corbella was born in Barcelona in 1988 and indulged his passion for music from a young age." }
+ - {title: "Mashups", image: "mashup.jpg", text: "Albert Olivé has created great Mashups over this years. Here you can listen all of them." }
+ - {title: "Top Trance Mix", image: "toptrancemix.jpg", text: "At first, Albert Olivé has his own radio show called Top Trance Mix. This show is over but you can listen whenever you want." }
 
 # Statistic Block
+statisticTitle: "Most listened"
 statisticBlockImage: "statistic.jpg"
 statisticBlock:
- - {count: "350", specialCharacter: "+", info: "attendees", detail: "from everywhere"}
- - {count: "48", specialCharacter: "+", info: "hours", detail: "of pure Google technologies"}
- - {count: "20", specialCharacter: "+", info: "speakers", detail: "from country and beyond"}
- - {count: "3", specialCharacter: "", info: "parallel tracks", detail: "plus entertainment lounge"}
+ - {count: "2110", specialCharacter: "views", info: "ATB vs Bellini", detail: "Samba de Janeiro at 9pm"}
+ - {count: "1987", specialCharacter: "views", info: "Bongo Botrako Vs Boikot", detail: "Kualkier día sale el sol"}
+ - {count: "1520", specialCharacter: "views", info: "Bruno Mars vs Adele", detail: "Set fire to the rain with grenade"}
+ - {count: "1386", specialCharacter: "views", info: "LMFAO Vs Skrillex", detail: "Sexy and I Know It Bangarang"}
 
 # Latest News Block
-latestNewsTitle: "Latest news"
+latestNewsTitle: "Latest Mashups"
+
+# Follow me
+followMeTitle: "Follow me"
 
 # Rockstar Speakers Block
 rockstarSpeakersImage: "rockstar-speakers.jpg"
@@ -174,9 +178,9 @@ ticketsOffers:
 
 # Footer
 socialLinks:
- - {link: "https://plus.google.com/b/102444623953913144164", icon: "google-plus"}
- - {link: "https://twitter.com/intent/user?screen_name=GDGLviv", icon: "twitter"}
- - {link: "https://facebook.com/GDGLviv", icon: "facebook"}
+ - {link: "https://facebook.com/albertoliveDj", icon: "facebook"}
+ - {link: "https://twitter.com/intent/user?screen_name=djalbertolive", icon: "twitter"}
+ - {link: "https://plus.google.com/u/0/+AlbertOlive", icon: "google-plus"}
  - {permalink: "/feed.xml", icon: "rss"}
 footerBlocks:
  -
