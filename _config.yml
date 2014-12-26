@@ -13,7 +13,7 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "Dj Albert Olive"
 email: "djalbertolive@gmail.com"
 description: "Mashups, remixes and Top Trance Mix"
-baseurl: "djalbertolive"
+baseurl: "/"
 url: "http://albertolive.github.io/djalbertolive"
 permalink: "/blog/:title"
 googleAnalyticsTrackingId: ""
