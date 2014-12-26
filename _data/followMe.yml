@@ -1,0 +1,40 @@
+- 
+  id: 0
+  name: "Facebook"
+  thumbnailUrl: facebook.jpg
+  link: "http://www.facebook.com/albertoliveDj"
+- 
+  id: 1
+  name: "Twitter"
+  thumbnailUrl: twitter.jpg
+  link: "https://twitter.com/#!/djalbertolive" 
+- 
+  id: 2
+  name: "Google Plus"
+  thumbnailUrl: googlePlus.jpg
+  link: "https://plus.google.com/u/0/+AlbertOlive"
+- 
+  id: 4
+  name: "Soundcloud"
+  thumbnailUrl: soundcloud.jpg
+  link: "https://soundcloud.com/albert-olive"
+- 
+  id: 5
+  name: "Youtube"
+  thumbnailUrl: youtube.jpg
+  link: "https://www.youtube.com/user/albertolivecorbella/"
+- 
+  id: 6
+  name: "Vimeo"
+  thumbnailUrl: vimeo.jpg
+  link: "https://vimeo.com/albertolive"
+- 
+  id: 7
+  name: "Dailymotion"
+  thumbnailUrl: dailymotion.jpg
+  link: "http://www.dailymotion.com/djalbertolive"
+- 
+  id: 8
+  name: "Mixcloud"
+  thumbnailUrl: mixcloud.jpg
+  link: "http://www.mixcloud.com/djalbertolive/"
