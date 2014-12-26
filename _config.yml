@@ -10,9 +10,9 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 
 
 # Site Settings
-title: "Dj Albert Olive"
+title: "Dj Albert Olive - Mashups, Remixes and Top Trance Mix."
 email: "djalbertolive@gmail.com"
-description: "Mashups, remixes and Top Trance Mix"
+description: "Albert Olive (Pd Oli - La Factoria - Disco Inferno) is a deejay and producer from Barcelona. Listen his remixes, mashups and his radio show Top Trance Mix."
 baseurl: "/djalbertolive"
 url: "http://albertolive.github.io/djalbertolive/"
 permalink: "/blog/:title"
@@ -22,22 +22,22 @@ siteVerification: "b9imDOrFawXaBXCC4r3uJDdswSYcalD-wWpMYhFq-no"
 
 # Organizer Info
 organizerName: "Dj Albert Olive"
-organizerAlternateName: "Google Developer Group Lviv"
-organizerDescription: "Open and volunteer geek communities who create exciting projects and share experience about Google technology with passion."
-organizerEmail: "lviv@gdg.org.ua"
+organizerAlternateName: ""
+organizerDescription: ""
+organizerEmail: "djalbertolive@gmail.com"
 organizerLogo: "/img/seo/organizer-logo.png"
-organizerLink: "http://lviv.gdg.org.ua/"
+organizerLink: ""
 
 # Head
-metaKeywords: "event, gdg, devfest, google, programming, android, chrome, developers, lviv"
-twitterAccount: "@DevFest"
+metaKeywords: "albert olive, rumba, dance, electronic, mashup, bootleg, trance, progressive, Top Trance Mix, reggaeton"
+twitterAccount: "@djalbertolive"
 socialImageSrcGooglePlus: "/img/seo/sharing-google-plus.png"
 socialImageSrcTwitter: "/img/seo/sharing-twitter.png"
 socialImageSrcFacebook: "/img/seo/sharing-facebook.png"
 
 # Documents
-c4pUrl: "http://bit.ly/dfua-c4p"
-c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
+c4pUrl: ""
+c4sponsorsUrl: ""
 
 
 # Navigation
@@ -56,13 +56,13 @@ rightNavigationButtons:
 
 # Hero Block
 heroImage: "hero.jpg"
-heroTitle: "GDG DevFest <typeout> 2014"
-eventDate: "September - November, 2014"
-typeoutTextValues: '"", "Season", "Ukraine", "Germany", "USA"'
-typeoutFallback: "Season"
+heroTitle: ""
+eventDate: ""
+typeoutTextValues: ''
+typeoutFallback: ""
 heroButtons:
- - {link: "http://bit.ly/dfua-c4p", text: "Become a speaker"}
- - {permalink: "/#tickets", text: "Buy tickets"}
+ - {link: "", text: ""}
+ - {permalink: "", text: ""}
 
 # About Block
 aboutTitle: "About GDG DevFest"
