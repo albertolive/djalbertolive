@@ -12,8 +12,8 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 # Site Settings
 title: "Dj Albert Olive"
 email: "djalbertolive@gmail.com"
-description: "GDG DevFest is a set of events all around the world"
-baseurl: ""
+description: "Mashups, remixes and Top Trance Mix"
+baseurl: "djalbertolive"
 url: "http://albertolive.github.io/djalbertolive"
 permalink: "/blog/:title"
 googleAnalyticsTrackingId: ""
