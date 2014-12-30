@@ -16,6 +16,7 @@ description: "Albert Olive (Pd Oli - La Factoria - Disco Inferno) is a deejay an
 baseurl: "/djalbertolive"
 url: "http://albertolive.github.io/djalbertolive/"
 permalink: "/blog/:title"
+#permalink: "/mashups/:title"
 googleAnalyticsTrackingId: ""
 googleAnalyticsSiteUrl: ""
 siteVerification: "b9imDOrFawXaBXCC4r3uJDdswSYcalD-wWpMYhFq-no"
@@ -43,12 +44,13 @@ c4sponsorsUrl: ""
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
- - {permalink: "/blog/", text: "Blog"}
+ - {permalink: "/blog/", text: "News"}
  - {permalink: "/schedule/", text: "Schedule"}
- - {permalink: "/speakers/", text: "Speakers"}
- - {permalink: "/team/", text: "Team"}
- - {permalink: "/logistics/", text: "Logistics"}
- - {permalink: "/hackathon/", text: "Hackathon"}
+ - {permalink: "/mashups/", text: "Mashups"}
+# - {permalink: "/speakers/", text: "Speakers"}
+# - {permalink: "/team/", text: "Team"}
+# - {permalink: "/logistics/", text: "Logistics"}
+# - {permalink: "/hackathon/", text: "Hackathon"}
 bottomNavigationLinks:
  - {link: "http://bit.ly/dfua-c4p", text: "Become a speaker"}
 rightNavigationButtons:
@@ -80,8 +82,12 @@ statisticBlock:
  - {count: "1520", specialCharacter: "views", info: "Bruno Mars vs Adele", detail: "Set fire to the rain with grenade"}
  - {count: "1386", specialCharacter: "views", info: "LMFAO Vs Skrillex", detail: "Sexy and I Know It Bangarang"}
 
-# Latest News Block
+# Latest Mashup Block
 latestNewsTitle: "Latest Mashups"
+
+# Mashups
+mashupTitle: "Latest Mashups"
+
 
 # Follow me
 followMeTitle: "Follow me"
@@ -131,8 +137,8 @@ partnersC4sponsorsButton: "Become a sponsor"
 # Subscribe Block
 subscribeImage: "subscribe.jpg"
 subscribeTitle: "Subscribe for updates"
-subscribeAction: "http://gdg.us5.list-manage1.com/subscribe/post?u=9fc8aa205b0521b5f05fc8e1e&amp;id=ae0fb459fc"
-subscribeInfo: "Registration will be open around end of August. Number of tickets are limited. Stay tuned!"
+subscribeAction: "http://djalbertolive.us3.list-manage2.com/subscribe?u=66b4fa08073c3baf4dbe43f9c&id=3f1a5a255c"
+subscribeInfo: "Subscribe to Albert Olivé newsletter to be the first to listen his newest mashups"
 
 # Tickets Block
 ticketsTitle: "Pricetable"
