@@ -1,30 +1,162 @@
 - 
-  id: 1
+  id: 27
   name: "Manel vs Tata Golosa"
   surname: "Al mar con los micrófonos"
   thumbnailUrl: manel-vs-tata-golosa.jpg
   link: ''
 - 
-  id: 2
+  id: 26
   name: "Axwell vs The Chemical Brothers"
   surname: "Believe and you'll feel the vibe"
   thumbnailUrl: axwell-vs-chemical-brothers.jpg
   link: ''
 - 
-  id: 3
+  id: 25
   name: "Skrillex vs The Black Eyed Peas"
   surname: "Kill That Body"
   thumbnailUrl: Skrillex-vs-The-Black-Eyed-Peas.jpg
   link: ''
 - 
-  id: 4
+  id: 24
   name: "Chemical Brothers vs Deadmau5 vs Black Eyed Peas"
   surname: "Pump the animal big jump"
   thumbnailUrl: Chemical-Brothers-vs-Deadmau5-vs-Black-Eyed-Peas.jpg
   link: ''
 - 
-  id: 5
+  id: 23
   name: "Armin Van Buuren Vs Toots & The Maytals"
   surname: "Funky Ping Pong"
   thumbnailUrl: Armin-Van-Buuren-Vs-Toots-&-The-Maytals.jpg
+  link: ''
+- 
+  id: 22
+  name: "Steve Aoki, Chris Lake & Tujamo vs Axwell & Sebastian Ingrosso"
+  surname: "Together Boneless"
+  thumbnailUrl: Steve-Aoki,-Chris-Lake-&-Tujamo-vs-Axwell-&-Sebastian-Ingrosso.jpg
+  link: ''
+- 
+  id: 21
+  name: "Europe vs David Guetta"
+  surname: "The World is in final Countdown"
+  thumbnailUrl: Europe-vs-David-Guetta.jpg
+  link: ''
+- 
+  id: 20
+  name: "Gorillaz vs Skip&Die"
+  surname: "Feel Good with La Cumbia Dictadura"
+  thumbnailUrl: Gorillaz-vs-Skip&Die.jpg
+  link: ''
+- 
+  id: 19
+  name: "Pitbull vs Proyecto uno"
+  surname: "I know you want me tiburon"
+  thumbnailUrl: Pitbull-vs-Proyecto-uno.jpg
+  link: ''
+- 
+  id: 18
+  name: "Martin Garrix vs Apollo 440"
+  surname: "Stop the Animals"
+  thumbnailUrl: Martin-Garrix-vs-Apollo-440.jpg
+  link: ''
+- 
+  id: 17
+  name: "David Guetta Vs Die Antwoord"
+  surname: "Love is on fire"
+  thumbnailUrl: David-Guetta-Vs-Die-Antwoord.jpg
+  link: ''
+- 
+  id: 16
+  name: "Major Lazer Vs Cosmic Gate"
+  surname: "Get Up And Watch Out For This"
+  thumbnailUrl: Major-Lazer-Vs-Cosmic-Gate.jpg
+  link: ''
+- 
+  id: 15
+  name: "The Killers vs Rasmus Faber & Syke 'n' Sugarstarr"
+  surname: "We Go Oh Human"
+  thumbnailUrl: The-Killers-vs-Rasmus-Faber-&-Syke-Sugarstarr.jpg
+  link: ''
+- 
+  id: 14
+  name: "LMFAO Vs Skrillex feat. Sirah"
+  surname: "Sexy and I Know It Bangarang"
+  thumbnailUrl: LMFAO-Vs-Skrillex-feat.-Sirah.jpg
+  link: ''
+- 
+  id: 13
+  name: "David Guetta Vs Benny Benassi Vs Faithless"
+  surname: "Memories & Satisfaction"
+  thumbnailUrl: David-Guetta-Vs-Benny-Benassi-Vs-Faithless.jpg
+  link: ''
+- 
+  id: 12
+  name: "ATB vs Bellini"
+  surname: "Samba de Janeiro at 9pm"
+  thumbnailUrl: ATB-vs-Bellini.jpg
+  link: ''
+- 
+  id: 11
+  name: "Bola de Drac vs Avicii & Skrillex"
+  surname: "Levels & Bola de drac"
+  thumbnailUrl: Bola-de-Drac-vs-Avicii-&-Skrillex.jpg
+  link: ''
+- 
+  id: 10
+  name: "Orxata Sound System vs Faithless"
+  surname: "Insomnia Nai ti su"
+  thumbnailUrl: Orxata-Sound-System-vs-Faithless.jpg
+  link: ''
+- 
+  id: 9
+  name: "Michael Jackson vs Mazoni"
+  surname: "Això nostre s'ha acabat Billie Jean"
+  thumbnailUrl: Michael-Jackson-vs-Mazoni.jpg
+  link: ''
+- 
+  id: 8
+  name: "The Prodigy Vs 2 Unlimited Vs Benny Benassi"
+  surname: "No limits & smack my bitch up & satisfaction"
+  thumbnailUrl: The-Prodigy-Vs-2-Unlimited-Vs-Benny-Benassi.jpg
+  link: ''
+- 
+  id: 7
+  name: "Chicane vs Ashley Wallbridge"
+  surname: "Going deep vision"
+  thumbnailUrl: Chicane-vs-Ashley-Wallbridge.jpg
+  link: ''
+- 
+  id: 6
+  name: "Tom Jones vs BodyRockers"
+  surname: "I like Sex Bomb"
+  thumbnailUrl: Tom-Jones-vs-BodyRockers.jpg
+  link: ''
+- 
+  id: 5
+  name: "Bongo Botrako Vs Boikot"
+  surname: "Kualkier día sale el sol"
+  thumbnailUrl: Bongo-Botrako-Vs-Boikot.jpg
+  link: ''
+- 
+  id: 4
+  name: "Bruno Mars vs Adele"
+  surname: "Set fire to the rain with grenade"
+  thumbnailUrl: Bruno-Mars-vs-Adele.jpg
+  link: ''
+- 
+  id: 3
+  name: "The Black Eyed Peas Vs Juan Magan"
+  surname: "I Got a Verano Azul Feeling"
+  thumbnailUrl: The-Black-Eyed-Peas-Vs-Juan-Magan.jpg
+  link: ''
+- 
+  id: 2
+  name: "Yolanda Be Cool & DCUP vs Bob Sinclar"
+  surname: "We No Speak Americano so Rock This Party"
+  thumbnailUrl: Yolanda-Be-Cool-&-DCUP-vs-Bob-Sinclar.jpg
+  link: ''
+- 
+  id: 1
+  name: "Chris Anderson & Dj Robbie vs Dusminguet"
+  surname: "Last night Marihuana"
+  thumbnailUrl: Chris-Anderson-&-Dj-Robbie-vs-Dusminguet.jpg
   link: ''
