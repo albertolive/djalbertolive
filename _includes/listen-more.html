@@ -53,10 +53,8 @@
                         {% assign id = mashup.id %}
                             {% assign next = id | plus:1 %}
                             {% assign previous = id | minus:1 %}
-                            {{next}}
-                            {{previous}}
                     {% endif %}
-                    {% if mashup.id == next %}
+                    {% if id == next %}
                     <div class="col-md-6">
                         caca
                         <a href="{{ site.baseurl }}/mashups/{{mashup.link}}/">
