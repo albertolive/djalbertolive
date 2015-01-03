@@ -1,0 +1,79 @@
+<!-- Begin Latest News Section -->
+<section id="follow-me" class="follow-me">
+	<div class="content-wrapper">
+		<div class="col-lg-10 col-lg-offset-1">
+            <h3>Watch the video or listen to other sites</h3>
+            <div class="row">
+                {% assign animationDelay = 0 %} {% for mashup in site.data.mashups %}
+                    {% if mashup.id == page.id %}
+                        {% assign colWidth = 4 %}
+                            {% if mashup.soundcloud != '' %}
+                                <a href="{{ mashup.soundcloud }}" target="_blank">
+                	                <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                	                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/soundcloud.jpg)"></div>
+                	                    <!--<p class="name">{{ mashup.name }}</p>-->
+                	                </div>
+                	            </a>
+                            {% endif %}
+                            {% if mashup.youtube != '' %}
+                                <a href="{{ mashup.youtube }}" target="_blank">
+                                    <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                        <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/youtube.jpg)"></div>
+                                        <!--<p class="name">{{ mashup.name }}</p>-->
+                                    </div>
+                                </a>
+                            {% endif %}
+                            {% if mashup.vimeo != '' %}
+                                <a href="{{ mashup.vimeo }}" target="_blank">
+                                    <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                        <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/vimeo.jpg)"></div>
+                                        <!--<p class="name">{{ mashup.name }}</p>-->
+                                    </div>
+                                </a>
+                            {% endif %}
+                            {% if mashup.dailymotion != '' %}
+                                <a href="{{ mashup.dailymotion }}" target="_blank">
+                                    <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                        <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/dailymotion.jpg)"></div>
+                                        <!--<p class="name">{{ mashup.name }}</p>-->
+                                    </div>
+                                </a>
+                            {% endif %}
+                        {% assign animationDelay = animationDelay | plus:500 %} 
+                        {% assign check = forloop.index | modulo:2 %} 
+                        {% if check == 0 %}
+                        <div class="clearfix visible-xs"></div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="row">
+                {% for mashup in site.data.mashups%}
+                    {% if mashup.id == page.id %}
+                        {% assign id = mashup.id %}
+                            {% assign next = id | plus:1 %}
+                            {% assign previous = id | minus:1 %}
+                            {{next}}
+                            {{previous}}
+                    {% endif %}
+                    {% if mashup.id == next %}
+                    <div class="col-md-6">
+                        caca
+                        <a href="{{ site.baseurl }}/mashups/{{mashup.link}}/">
+                            <img src="{{site.baseurl}}/img/other/next.png"
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% if mashup.id == previous %}
+                    <div class="col-md-6">
+                        <a href="{{ site.baseurl }}/mashups/{{mashup.link}}/">
+                            <img src="{{site.baseurl}}/img/other/previous.png"
+                        </a>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+	</div>
+</section>
+<!-- End Latest News Section -->
