@@ -30,8 +30,8 @@
                             </div>
                             <div class="lily-bottom">
                                 <ul class="slider">
-                                        <h2 class="name"><b>{{ mashup.name }}</b> <br><span>{{ mashup.surname }}</span></h2>
-                                        <p class="position">{{ mashup.company }}</p>
+                                        <h2 class="name truncate"><b>{{ mashup.name }}</b> <br><span>{{ mashup.surname }}</span></h2>
+                                        <p class="position truncate">{{ mashup.company }}</p>
                                     {% assign sessionsNumber = 0 %}
                                     {% if site.showSessions %} 
                                         {% for session in site.data.sessions %} 

@@ -4,44 +4,53 @@
 		<div class="col-lg-10 col-lg-offset-1">
             <h3>Watch it in other sites</h3>
             <div class="row">
-                {% assign animationDelay = 0 %} {% for mashup in site.data.mashups %}
+                {% assign animationDelay = 0 %} 
+                {% for mashup in site.data.mashups %}
                     {% if mashup.id == page.id %}
-                        {% assign colWidth = 4 %}
-                            {% if mashup.soundcloud != '' %}
-                                <a href="{{ mashup.soundcloud }}" target="_blank">
-                	                <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
-                	                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/soundcloud.jpg)"></div>
-                	                    <!--<p class="name">{{ mashup.name }}</p>-->
-                	                </div>
-                	            </a>
-                            {% endif %}
-                            {% if mashup.youtube != '' %}
-                                <a href="{{ mashup.youtube }}" target="_blank">
-                                    <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
-                                        <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/youtube.jpg)"></div>
-                                        <!--<p class="name">{{ mashup.name }}</p>-->
-                                    </div>
-                                </a>
-                            {% endif %}
-                            {% if mashup.vimeo != '' %}
-                                <a href="{{ mashup.vimeo }}" target="_blank">
-                                    <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
-                                        <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/vimeo.jpg)"></div>
-                                        <!--<p class="name">{{ mashup.name }}</p>-->
-                                    </div>
-                                </a>
-                            {% endif %}
-                            {% if mashup.dailymotion != '' %}
-                                <a href="{{ mashup.dailymotion }}" target="_blank">
-                                    <div class="judge col-md-{{ colWidth }} col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
-                                        <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/dailymotion.jpg)"></div>
-                                        <!--<p class="name">{{ mashup.name }}</p>-->
-                                    </div>
-                                </a>
-                            {% endif %}
-                            {% if mashup.soundcloud == '' and mashup.youtube == '' and mashup.vimeo == '' and mashup.dailymotion == '' %}
-                                <h4>There's no more sites</h4>
-                            {% endif %}
+                        {% if mashup.soundcloud != '' %}
+                            {% assign nSites = nSites | plus:1 %}
+                        {% endif %}
+                        {% if  mashup.youtube != '' %}
+                            {% assign nSites = nSites | plus:1 %}
+                        {% endif %}
+                        {% if  mashup.vimeo != '' %}
+                            {% assign nSites = nSites | plus:1 %}
+                        {% endif %}
+                        {% if  mashup.dailymotion != '' %}
+                            {% assign nSites = nSites | plus:1 %}
+                        {% endif %}
+                        {% assign colWidth = 12 | divided_by:nSites %}
+                        {% if mashup.soundcloud != '' %}
+                            <a href="{{ mashup.soundcloud }}" target="_blank">
+            	                <div class="judge col-md-{{ colWidth }} col-xs-{{ colWidth }} animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+            	                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/soundcloud.jpg)"></div>
+            	                </div>
+            	            </a>
+                        {% endif %}
+                        {% if mashup.youtube != '' %}
+                            <a href="{{ mashup.youtube }}" target="_blank">
+                                <div class="judge col-md-{{ colWidth }} col-xs-{{ colWidth }} animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/youtube.jpg)"></div>
+                                </div>
+                            </a>
+                        {% endif %}
+                        {% if mashup.vimeo != '' %}
+                            <a href="{{ mashup.vimeo }}" target="_blank">
+                                <div class="judge col-md-{{ colWidth }} col-xs-{{ colWidth }} animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/vimeo.jpg)"></div>
+                                </div>
+                            </a>
+                        {% endif %}
+                        {% if mashup.dailymotion != '' %}
+                            <a href="{{ mashup.dailymotion }}" target="_blank">
+                                <div class="judge col-md-{{ colWidth }} col-xs-{{ colWidth }} animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/socialNetwork/dailymotion.jpg)"></div>
+                                </div>
+                            </a>
+                        {% endif %}
+                        {% if mashup.soundcloud == '' and mashup.youtube == '' and mashup.vimeo == '' and mashup.dailymotion == '' %}
+                            <h4>There's no more sites</h4>
+                        {% endif %}
                         {% assign animationDelay = animationDelay | plus:500 %} 
                         {% assign check = forloop.index | modulo:2 %} 
                         {% if check == 0 %}
@@ -50,35 +59,53 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            <!--<div class="row">
-                <div class="col-md-3 col-xs-3"></div>
-                {% for mashup in site.data.mashups%}
+            <div class="row">
+                {% for mashup in site.data.mashups %}
                     {% if mashup.id == page.id %}
-                        {% assign id = mashup.id %}
-                        {% assign next = id | plus:1 %}
-                        {% assign previous = id | minus:1 %}
-                         
+                        {% assign selectedMashup = mashup %}
+                        {% assign next = selectedMashup.id | plus:1 %}
+                        {% assign previous = selectedMashup.id | minus:1 %}
                     {% endif %}
-                    m {{mashup.id}}<br> id {{id}}<br> n {{next}}
+                {% endfor %}
+                {% for mashup in site.data.mashups %}
                     {% if mashup.id == next %}
-                        <div class="col-md-3 col-xs-3 {{id}}">
-                            <a href="{{ site.baseurl }}/mashups/{{mashup.link}}/">
+                        {% assign nextMashup = mashup %}
+                    {% endif%}
+                    {% if mashup.id == previous %}
+                        {% assign previousMashup = mashup %}
+                    {% endif%}
+                {% endfor %}
+                {% if nextMashup and previousMashup %}
+                    <div class="col-md-6 col-xs-6">
+                        <a href="{{ site.baseurl }}/mashup/{{nextMashup.link}}/">
+                            <img src="{{site.baseurl}}/img/other/next.png">
+                        </a>
+                    </div>
+                {% else %}
+                    {% if nextMashup %}
+                        <div class="col-md-12 col-xs-12">
+                            <a href="{{ site.baseurl }}/mashup/{{nextMashup.link}}/">
                                 <img src="{{site.baseurl}}/img/other/next.png">
                             </a>
-                        </div>{{ id }} {{ next }}
-                    {% else %}
-                        <div class="col-md-3 col-xs-3"></div>
+                        </div>
                     {% endif %}
-                    {% if mashup.id == previous %}
-                        <div class="col-md-3 col-xs-3 {{id}}">
-                            <a href="{{ site.baseurl }}/mashups/{{mashup.link}}/">
+                {% endif %}
+                {% if previousMashup and nextMashup %}
+                    <div class="col-md-6 col-xs-6">
+                        <a href="{{ site.baseurl }}/mashup/{{previousMashup.link}}/">
+                            <img src="{{site.baseurl}}/img/other/previous.png">
+                        </a>
+                    </div>
+                {% else %}
+                    {% if previousMashup %}
+                        <div class="col-md-12 col-xs-12">
+                            <a href="{{ site.baseurl }}/mashup/{{previousMashup.link}}/">
                                 <img src="{{site.baseurl}}/img/other/previous.png">
                             </a>
                         </div>
                     {% endif %}
-                {% endfor %}
-                <div class="col-md-3 col-xs-3"></div>
-            </div>-->
+                {% endif %}
+            </div>
         </div>
 	</div>
 </section>
