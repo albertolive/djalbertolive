@@ -1,4 +1,26 @@
 - 
+  id: 1
+  name: "2046 Granollers"
+  surname: ""
+  company: "Granollers"
+  title: ""
+  bio: ""
+  thumbnailUrl: 2046granollers.jpg
+  rockstar: true
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+DawidOstrowski/"}
+- 
+  id: 2
+  name: "Sala Sarau"
+  surname: ""
+  company: "Cardedeu"
+  title: ""
+  bio: ""
+  thumbnailUrl: salasarau.jpg
+  rockstar: true
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+DawidOstrowski/"}
+- 
   id: 3
   name: "Dawid"
   surname: "Ostrowski"

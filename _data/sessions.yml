@@ -10,23 +10,25 @@
   service: true
 -
   id: 001
-  title: "Material design: Visual style and imagery"
-  description: "This session will reveal the invisible structures behind the material design system. Designers will show how to use the new color systems, typographic strategies, and the underlying grids that hold it together. They will show how imagery and the new framework material rendering can make apps more interesting and communicate more quickly."
+  title: "2046 Granollers"
+  description: ""
   subtype: workshop
-  speakers: [3, 6]
-  language: en
-  complexity: "Intermediate"
+  speakers: [1]
+  language:
+  complexity: ""
   video: "//www.youtube.com/embed/v3SCiUqI1yQ"
+  photo: ""
 -
   id: 002
-  title: "Building Cloud-powered wearable Apps"
-  description: "I will speak and show how to:<br>- Respond to touch events in your views with touch feedback animations.<br>- Hide and show views with reveal effect animations.<br>- Switch between activities with custom activity transition animations.<br>- Create more natural animations with curved motion.<br>- Animate changes in one or more view properties with view state change animations.<br>- Create icon morphing transition"
+  title: "Sala Sarau"
+  description: "Tens ganes d'una bona festa per cap d'any però no vols haver de marxar lluny? Les entitats de Cardedeu ens organitzem i et convidem al cap d'any més festiu i popular! Comença el 2015 de la millor manera!"
   subtype: presentation
-  speakers: [4, 5]
-  language: en
-  complexity: "Intermediate" 
+  speakers: [2]
+  language: 
+  complexity: "" 
   presentation: "https://speakerdeck.com/gdglviv/dmytro-danylyk-android-l-animation"
   video: "//www.youtube.com/embed/v3SCiUqI1yQ"
+  photo: "capdany2015.jpg"
 -
   id: 003
   title: "Android L Animation"

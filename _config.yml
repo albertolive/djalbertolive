@@ -15,7 +15,7 @@ email: "djalbertolive@gmail.com"
 description: "Albert Olive (Pd Oli - La Factoria - Disco Inferno) is a deejay and producer from Barcelona. Listen his remixes, mashups and his radio show Top Trance Mix."
 baseurl: "/djalbertolive"
 url: "http://albertolive.github.io/djalbertolive/"
-permalink: "/blog/:title"
+permalink: "/news/:title"
 #permalink: "/mashups/:title"
 googleAnalyticsTrackingId: ""
 googleAnalyticsSiteUrl: ""
@@ -44,7 +44,7 @@ c4sponsorsUrl: ""
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
- - {permalink: "/blog/", text: "News"}
+ - {permalink: "/news/", text: "News"}
  - {permalink: "/schedule/", text: "Schedule"}
  - {permalink: "/mashups/", text: "Mashups"}
 # - {permalink: "/speakers/", text: "Speakers"}
@@ -69,9 +69,9 @@ heroButtons:
 # About Block
 aboutTitle: "Dj Albert Olivé"
 aboutBlock:
- - {title: "About", image: "about.jpg", text: "Albert Olivé Corbella was born in Barcelona in 1988 and indulged his passion for music from a young age." }
- - {title: "Mashups", image: "mashup.jpg", text: "Albert Olivé has created great Mashups over this years. Here you can listen all of them." }
- - {title: "Top Trance Mix", image: "toptrancemix.jpg", text: "At first, Albert Olivé has his own radio show called Top Trance Mix. This show is over but you can listen whenever you want." }
+ - {title: "About", image: "about.jpg", text: "Albert Olivé Corbella was born in Barcelona in 1988 and indulged his passion for music from a young age.", link: "biography" }
+ - {title: "Mashups", image: "mashup.jpg", text: "Albert Olivé has created great Mashups over this years. Here you can listen all of them.", link: "mashups" }
+ - {title: "Top Trance Mix", image: "toptrancemix.jpg", text: "At first, Albert Olivé has his own radio show called Top Trance Mix. This show is over but you can listen whenever you want.", link: "toptrancemix" }
 
 # Statistic Block
 statisticTitle: "Most listened"

@@ -209,7 +209,7 @@ input,button,select,textarea {
 }
 
 a {
-    color: #03a9f4;
+    color: #000;
     text-decoration: none;
 }
 
@@ -2234,7 +2234,8 @@ b,strong {
 }
 
 a {
-    color: #03a9f4;
+    color: #000;
+    font-weight: bolder;
 }
 
 a:hover,a:active,a:focus {
@@ -2242,7 +2243,7 @@ a:hover,a:active,a:focus {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
