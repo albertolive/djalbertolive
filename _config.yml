@@ -13,7 +13,7 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "Dj Albert Olive - Mashups, Remixes and Top Trance Mix."
 email: "djalbertolive@gmail.com"
 description: "Albert Olive (Pd Oli - La Factoria - Disco Inferno) is a deejay and producer from Barcelona. Listen his remixes, mashups and his radio show Top Trance Mix."
-baseurl: "/djalbertolive"
+baseurl: ""
 url: "http://www.djalbertolive.com"
 permalink: "/news/:title"
 #permalink: "/mashups/:title"
