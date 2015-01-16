@@ -2134,7 +2134,7 @@ button.close {
     cursor: pointer;
     border: none;
     outline: none;
-    background: transparent;
+    background: #fff;
     color: inherit;
     font-size: 14px;
     text-align: center;
@@ -3008,7 +3008,8 @@ nav li a.current,nav li a:hover {
 }
 
 .right-nav-button {
-    margin: 11px 65px 0 0;
+    margin: 0px 25px 0px 0px;
+    bottom: 11px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 1;
