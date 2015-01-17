@@ -2331,6 +2331,18 @@ time {
     background-color: #fff;
 }
 
+.loader {
+    background: url(../img/logo/loader.gif) 0 0;
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+}
+
 .loader-gplus {
     display: inline-block;
     position: absolute;
