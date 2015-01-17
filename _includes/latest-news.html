@@ -4,11 +4,14 @@
 		<div class="col-lg-10 col-lg-offset-1">
 			<h3>{{ site.latestNewsTitle }}</h3>
 			<article class="row">
-				{% for post in site.posts limit:4 %}
-                    {% assign postUrl = site.baseurl | append: post.url %} 
-					<div class="post col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInDown" data-delay="500">
-						<h6>{{ post.title }}</h6>
-						<p class="post-body">{{ post.content | strip_html | truncate: 250 }} <a href="{{ postUrl }}">continue reading</a></p>
+				{% for post in site.data.mashups limit:4 %}
+                    {% assign postUrl = site.baseurl | append: post.link %} 
+					<div class="center-block post col-md-3 col-sm-3 text-left animated hiding" data-animation="fadeInDown" data-delay="300">
+						<!--<h6>{{ post.name }}</h6>-->
+						<a href="{{ site.baseurl }}/mashup/{{ post.link }}" target="_self">
+			                    <div class="flow-img img-circle judge-img" style="background-image: url({{ site.baseurl }}/img/mashups/lofi/{{ post.thumbnailUrl }})"></div>
+			                    <!--<p class="name">{{ followme.name }}</p>-->
+			            </a>
 					</div>
                 {% endfor %}
 			</article>
