@@ -2429,6 +2429,17 @@ time {
     padding: 7px 17px;
 }
 
+.overlay-link {
+    background: rgba(255,255,255,0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.overlay-link:hover {
+    background: rgba(255,255,255,0.5);
+}
+
 .card {
     position: relative;
     overflow: hidden;
@@ -2439,6 +2450,10 @@ time {
     background: #fff;
     box-shadow: 0 1px 7px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.15);
     text-align: center;
+}
+
+.minCard {
+    min-height: 459px;
 }
 
 .same-height {
@@ -2969,6 +2984,7 @@ nav li a.current,nav li a:hover {
 .statistic .stat {
     font-size: 100px;
     color: #03a9f4;
+    font-weight: 100;
 }
 
 .statistic .stat-info {
@@ -4573,6 +4589,22 @@ nav li a.current,nav li a:hover {
     .hidden-print {
         display: none !important;
     }
+}
+
+@media (max-width: 380px) {
+
+    .statistic .stat {
+        font-size: 50px !important;
+    }
+
+    .statistic .stat-info {
+        font-size: 12px !important;
+    }
+
+    .statistic .small {
+        font-size: 12px !important;
+    }
+
 }
 
 @media (min-width: 768px) {

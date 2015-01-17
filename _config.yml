@@ -71,10 +71,10 @@ aboutBlock:
 statisticTitle: "Most listened"
 statisticBlockImage: "statistic.jpg"
 statisticBlock:
- - {count: "2110", specialCharacter: "views", info: "ATB vs Bellini", detail: "Samba de Janeiro at 9pm"}
- - {count: "1987", specialCharacter: "views", info: "Bongo Botrako Vs Boikot", detail: "Kualkier día sale el sol"}
- - {count: "1520", specialCharacter: "views", info: "Bruno Mars vs Adele", detail: "Set fire to the rain with grenade"}
- - {count: "1386", specialCharacter: "views", info: "LMFAO Vs Skrillex", detail: "Sexy and I Know It Bangarang"}
+ - {count: "4521", specialCharacter: "views", info: "Manel vs Tata Golosa", detail: "Al Mar Con Los Micrófonos (Albert Olive Mashup)", link: "/mashup/manel-vs-tata-golosa-al-mar-con-los-microfonos-albert-olive-mashup/"}
+ - {count: "3861", specialCharacter: "views", info: "Bongo Botrako Vs Boikot", detail: "Kualkier día sale el sol", link: "/mashup/bongo-botrako-vs-boikot-kualkier-día-sale-el-sol-albert-olive-mashup/"}
+ - {count: "3223", specialCharacter: "views", info: "ATB vs Bellini", detail: "Samba de Janeiro at 9pm", link: "/mashup/atb-vs-bellini-samba-de-janeiro-at-9pm-albert-olive-mashup/"}
+ - {count: "2070", specialCharacter: "views", info: "Bruno Mars vs Adele", detail: "Set fire to the rain with grenade", link: "/mashup/bruno-mars-vs-adele-set-fire-to-the-rain-with-grenade-albert-olive-mashup/"}
 
 # Latest Mashup Block
 latestNewsTitle: "Latest Mashups"
