@@ -3685,7 +3685,7 @@ nav li a.current,nav li a:hover {
 }
 
 .post {
-    max-width: 84.5%;
+    max-width: 100%;
     margin-bottom: 4em;
 }
 
