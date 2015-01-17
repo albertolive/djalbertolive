@@ -49,7 +49,7 @@ navigationLinks:
  - {permalink: "/schedule/", text: "Schedule"}
  - {permalink: "/mashups/", text: "Mashups"}
  - {permalink: "/toptrancemix/", text: "Top Trance Mix"}
-
+ - {permalink: "/contact/", text: "Contact"}
 # Hero Block
 heroImage: "hero.jpg"
 heroTitle: ""
