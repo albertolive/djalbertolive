@@ -2134,7 +2134,7 @@ button.close {
     cursor: pointer;
     border: none;
     outline: none;
-    background: #fff;
+    background: transparent;
     color: inherit;
     font-size: 14px;
     text-align: center;
@@ -2146,6 +2146,10 @@ button.close {
     padding: 10px 15px;
     border-radius: 2px;
 }
+
+.waves-button.white-background {
+    background: #fff;
+} 
 
 .waves-button-input {
     margin: 0;
