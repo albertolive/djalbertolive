@@ -23,7 +23,7 @@
             },
             "geo" : {
                 "@type" : "GeoCoordinates",
-                {% assign coordinates = site.eventPlaceCoordinates | split:"," %}
+                
                 "latitude" : "{{ coordinates[0] }}",
                 "longitude" : "{{ coordinates[1] }}"
             }
@@ -61,7 +61,7 @@
                 },
                 "geo" : {
                     "@type" : "GeoCoordinates",
-                    {% assign hackathonCoordinates = site.hackathonPlaceCoordinates | split:"," %}
+                    
                     "latitude" : "{{ hackathonCoordinates[0] }}",
                     "longitude" : "{{ hackathonCoordinates[1] }}"
                 }
