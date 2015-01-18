@@ -4605,6 +4605,16 @@ nav li a.current,nav li a:hover {
         font-size: 12px !important;
     }
 
+    .judge-img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .latest-news .judge-img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
 }
 
 @media (min-width: 768px) {
