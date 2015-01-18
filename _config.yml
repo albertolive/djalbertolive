@@ -16,9 +16,8 @@ description: "Albert Olive (Pd Oli - La Factoria - Disco Inferno) is a deejay an
 baseurl: ""
 url: "http://www.djalbertolive.com"
 permalink: "/news/:title"
-#permalink: "/mashups/:title"
-googleAnalyticsTrackingId: ""
-googleAnalyticsSiteUrl: ""
+googleAnalyticsTrackingId: "UA-25355880-1"
+googleAnalyticsSiteUrl: "http://www.djalbertolive.com"
 siteVerification: "b9imDOrFawXaBXCC4r3uJDdswSYcalD-wWpMYhFq-no"
 
 # Organizer Info
