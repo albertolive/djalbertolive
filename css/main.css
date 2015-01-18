@@ -4593,6 +4593,10 @@ nav li a.current,nav li a:hover {
 
 @media (max-width: 380px) {
 
+    h1 {
+        font-size: 37.775px;
+    }
+
     .statistic .stat {
         font-size: 50px !important;
     }
@@ -4617,7 +4621,7 @@ nav li a.current,nav li a:hover {
 
     .menu-trigger {
         margin-right: 0px !important;
-    } 
+    }
 
 }
 
