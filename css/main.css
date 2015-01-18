@@ -51,6 +51,7 @@ dfn {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    font-weight: 300 !important;
 }
 
 mark {
@@ -4594,7 +4595,8 @@ nav li a.current,nav li a:hover {
 @media (max-width: 380px) {
 
     h1 {
-        font-size: 37.775px;
+        font-size: 35px !important;
+        font-weight: 300;
     }
 
     .statistic .stat {
