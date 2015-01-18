@@ -15,13 +15,6 @@
             </li>
             {% endfor %}
         </ul>
-        <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
-            {% for bottomNavigationLink in site.bottomNavigationLinks %}
-            <li>
-                <a href="{% if bottomNavigationLink.permalink != null %} {{ bottomNavigationLink.permalink | prepend: site.baseurl }} {% else %} {{ bottomNavigationLink.link }} {% endif %}" {% if bottomNavigationLink.link != null %}target="_blank"{% endif %}>{{ bottomNavigationLink.text }}</a>
-            </li>
-            {% endfor %}
-        </ul>
         
         <ul class="social-links right-nav-button right-nav-button-hidden waves-effect waves-button white-background waves-light waves-float pull-right hidden-xs hidden-sm">
             {% for social in site.socialLinks %}
@@ -33,9 +26,8 @@
                     </svg>
                 </a>
                 </div>
-            </li>
-            
+            </li> 
+            {% endfor %}
         </ul>
-        {% endfor %}
     </nav>
 </header>
