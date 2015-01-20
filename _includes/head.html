@@ -3,8 +3,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="author" content="Oleh Zasadnyy, GDG Lviv">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="Dj Albert Olivé">
+    {% if page.url == "/" %}
+        <meta name="description" content="{{ site.description }}">
+    {% elsif page.title == "News" %}
+        <meta name="description" content="In this section you will find the latest news of Dj Albert Olivé. Tour dates, new Mashups / Bootlegs, the Top Trance Mix Radio show, and many more.">
+    {% elsif page.title == "Biography" %}
+        <meta name="description" content="This is Albert Olivé official Biography. In this section you will learn about his life, his styles, where does he played and many more.">
+    {% elsif page.title == "Schedule" %}
+        <meta name="description" content="Here you will find Albert Olivé upcoming concerts or festivals. Don't miss any of them by tracking it.">
+    {% elsif page.title == "Mashups" %}
+        <meta name="description" content="This is where you will find all Albert Olivé Mashups / Bootlegs. Listen all of them directly from this page.">
+    {% elsif page.title == "Top Trance Mix" %}
+        <meta name="description" content="At first, Albert Olivé has his own radio show called Top Trance Mix. This show is over but you can listen whenever you want.">
+    {% elsif page.title == "Contact" %}
+        <meta name="description" content="Want to keep in touch with Dj Albert Olivé, send him a message and he will answer you.">
+    {% elsif page.url == page.permalink %}
+        <meta name="description" content="Listen {{ page.title }} (Albert Olive Mashup)">
+    {% else %}
+        <meta name="description" content="{{ site.description }}">
+    {% endif%}
     <meta name="keywords" content="{{ site.metaKeywords }}">
     <meta name="google-site-verification" content="{{ site.siteVerification }}" />
     <link rel="canonical" href="{{ site.url }}">
