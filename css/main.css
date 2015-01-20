@@ -4481,6 +4481,10 @@ nav li a.current,nav li a:hover {
   text-overflow: ellipsis;
 }
 
+.videoNav {
+    margin-top: 70px;
+}
+
 @media print {
     * {
         text-shadow: none !important;
