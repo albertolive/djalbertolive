@@ -4,6 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="author" content="Dj Albert Olivé">
+
+    <link rel="author" href="https://plus.google.com/u/0/+Djalbertolive">
+    <link rel="publisher" href="https://plus.google.com/u/0/+Djalbertolive">
+
     {% if page.url == "/" %}
         <meta name="description" content="{{ site.description }}">
     {% elsif page.title == "News" %}
@@ -13,32 +17,92 @@
     {% elsif page.title == "Schedule" %}
         <meta name="description" content="Here you will find Albert Olivé upcoming concerts or festivals. Don't miss any of them by tracking it.">
     {% elsif page.title == "Mashups" %}
-        <meta name="description" content="This is where you will find all Albert Olivé Mashups / Bootlegs. Listen all of them directly from this page.">
+        <meta name="description" content="This is where you will find all Albert Olivé Mashups / Bootlegs. Listen and download all of them directly from this page.">
     {% elsif page.title == "Top Trance Mix" %}
         <meta name="description" content="At first, Albert Olivé has his own radio show called Top Trance Mix. This show is over but you can listen whenever you want.">
     {% elsif page.title == "Contact" %}
         <meta name="description" content="Want to keep in touch with Dj Albert Olivé, send him a message and he will answer you.">
-    {% elsif page.url == page.permalink %}
-        <meta name="description" content="Listen {{ page.title }} (Albert Olive Mashup)">
+    {% elsif page.type == "mashup" %}
+        <meta name="description" content="{{ page.seoDescription }}">
     {% else %}
         <meta name="description" content="{{ site.description }}">
-    {% endif%}
-    <meta name="keywords" content="{{ site.metaKeywords }}">
+    {% endif %}
+
+    {% if page.type == "mashup" %}
+        <meta name="keywords" content="{{ page.metaKeywords }}">
+        <meta name="pubdate" content="{{ page.date }}">
+        <meta name="last_updated" content="{{ page.date }}">
+        <meta name="dateCreated" content="{{ page.date }}">
+        <meta itemprop="datePublished" content="{{ page.date }}" id="date">
+
+        {% if page.soundcloud %}
+            {% assign player = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" | append: {{page.soundcloud}} %}
+        {% elsif page.youtube %}
+            {% assign player = "http://www.youtube.com/embed/" | append: {{page.youtube}} %}
+        {% endif %}
+
+        <link rel="image_src" href="{{ site.url }}/img/mashups/banner/{{ page.image }}" />
+        <link rel="video_src" href="http://{{page.videoSeo}}"/>
+        <meta name="video_height" content="480" />
+        <meta name="video_width" content="640" />
+        <meta name="video_type" content="application/x-shockwave-flash" />
+
+        <!-- Social: Twitter -->
+        <meta name="twitter:card" content="player">
+        <meta name="twitter:site" content="{{ site.twitterAccount }}">
+        <meta name="twitter:creator" content="{{ site.twitterAccount }}">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ page.seoDescription }}">
+        <meta name="twitter:player" content="{{ player }}">
+        <meta name="twitter:player:width" content="640">
+        <meta name="twitter:player:height" content="480">
+        <meta name="twitter:image:src" content="{{ site.url }}/img/mashups/banner/{{ page.image }}">
+
+        <!-- Social: Facebook / Open Graph -->
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
+        <meta property="og:site_name" content="{{ site.title }}" />
+        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:image" content="{{ site.url }}/img/mashups/banner/{{ page.image }}" />
+        <meta property="og:description" content="{{ page.seoDescription }}" />
+        {% if page.videoSeo %}
+            <meta property="og:type" content="video" />
+            <meta property="og:video" content="http://{{page.videoSeo}}" />
+            <meta property="og:video:secure_url" content="https://{{page.videoSeo}}" />
+            <meta property="og:video:type" content="application/x-shockwave-flash" />
+            <meta property="og:video:width" content="640" />
+            <meta property="og:video:height" content="480" />
+            <meta property="og:video:tag" content="{{page.metaKeywords}}">
+        {% else %}
+            <meta property="og:type" content="music.song" />
+            <meta property="og:audio:type" content="audio/mpeg" />
+            <meta property="og:audio" content="http://{{page.audioSeo}}" />
+            <meta property="og:title" content="{{page.title}}" />
+            <meta property="og:url" content="http://{{page.audioSeo}}" />
+        {% endif %}
+
+    {% else %}
+
+        <meta name="keywords" content="{{ site.metaKeywords }}">
+
+        <!-- Social: Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="{{ site.twitterAccount }}">
+        <meta name="twitter:creator" content="{{ site.twitterAccount }}">
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:image:src" content="{{ site.socialImageSrcTwitter | prepend: site.baseurl | prepend: site.url }}">
+
+        <!-- Social: Facebook / Open Graph -->
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
+        <meta property="og:site_name" content="{{ site.title }}" /> 
+        <meta property="og:type" content="website" /> 
+        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend: site.baseurl | prepend: site.url }}" />
+        <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+
     <meta name="google-site-verification" content="{{ site.siteVerification }}" />
     <link rel="canonical" href="{{ site.url }}">
-    <!-- Social: Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{ site.twitterAccount }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image:src" content="{{ site.socialImageSrcTwitter | prepend: site.baseurl | prepend: site.url }}">
-    <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
-    <meta property="og:site_name" content="{{ site.title }}" /> 
-    <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:description" content="{{ site.description }}" /> 
     
     <title>{% if page.title %}{{ page.title }} &bull; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="shortcut icon" href="{{ "/img/favicons/favicon.ico" | prepend: site.baseurl }}">

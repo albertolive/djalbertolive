@@ -3,7 +3,14 @@
         <div class="col-lg-10 col-lg-offset-1">
 			<div class="videoWrapper">
 			    <!-- Copy & Pasted from YouTube -->
-			    <iframe width="560" height="349" src="http://www.youtube.com/embed/{{ page.youtube }}?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+			    <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+			    	<iframe width="560" height="349" src="http://www.youtube.com/embed/{{ page.youtube }}?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+			    	<meta itemprop="thumbnailUrl" content="{{ site.url }}/img/mashups/banner/{{ page.image }}" />
+				    <meta itemprop="contentURL" content="{{ page.videoSeo }}" />
+				    <meta itemprop="embedURL" content="http://www.youtube.com/embed/{{ page.youtube }}" />
+				    <meta itemprop="uploadDate" content="{{page.date}}" />
+				    <meta itemprop="name" content="{{page.title}}" />
+		    	</div>
 			</div>
         </div>
     </div>

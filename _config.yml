@@ -10,9 +10,9 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 
 
 # Site Settings
-title: "Dj Albert Olive - Mashups, Remixes and Top Trance Mix."
+title: "Dj Albert Olivé - Mashups, Remixes and Top Trance Mix."
 email: "djalbertolive@gmail.com"
-description: "Albert Olive (Pd Oli - La Factoria - Disco Inferno) is a deejay and producer from Barcelona. Listen his remixes, mashups and his radio show Top Trance Mix."
+description: "Albert Olivé (Pd Oli - La Factoria - Disco Inferno) is a deejay and producer from Barcelona. Listen his remixes, mashups and his radio show Top Trance Mix."
 baseurl: ""
 url: "http://www.djalbertolive.com"
 permalink: "/news/:title"
@@ -31,9 +31,9 @@ organizerLink: "http://www.djalbertolive.com"
 # Head
 metaKeywords: "albert olive, rumba, dance, electronic, mashup, bootleg, trance, progressive, Top Trance Mix, reggaeton"
 twitterAccount: "@djalbertolive"
-socialImageSrcGooglePlus: "/img/seo/sharing-google-plus.png"
-socialImageSrcTwitter: "/img/seo/sharing-twitter.png"
-socialImageSrcFacebook: "/img/seo/sharing-facebook.png"
+socialImageSrcGooglePlus: "/img/logo/logo_social_media.png"
+socialImageSrcTwitter: "/img/logo/logo_social_media.png"
+socialImageSrcFacebook: "/img/logo/logo_social_media.png"
 
 # Navigation
 navigationLinks:
@@ -84,7 +84,7 @@ subscribeInfo: "Subscribe to Albert Olivé newsletter to be the first to listen 
 socialLinks:
  - {link: "https://facebook.com/albertoliveDj", icon: "facebook"}
  - {link: "https://twitter.com/intent/user?screen_name=djalbertolive", icon: "twitter"}
- - {link: "https://plus.google.com/u/0/+AlbertOlive", icon: "google-plus"}
+ - {link: "https://plus.google.com/u/0/+Djalbertolive", icon: "google-plus"}
  - {permalink: "/feed.xml", icon: "rss"}
 
 # Blog

@@ -4487,6 +4487,8 @@ nav li a.current,nav li a:hover {
 
 iframe {
     border: 0px;
+    height: 99%;
+    width: 100%;
 }
 
 @media print {
