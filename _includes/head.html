@@ -92,14 +92,14 @@
         <meta name="twitter:creator" content="{{ site.twitterAccount }}">
         <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
         <meta name="twitter:description" content="{{ description }}">
-        <meta name="twitter:image:src" content="{{ site.url }}/img/sections-background/{{ page.image }}" />
+        <meta name="twitter:image:src" content="{% if page.image %}{{ site.url }}/img/sections-background/{{ page.image }} {% else %} {{ site.url }}/img/about-section/mashup.jpg {% endif %}" />
 
         <!-- Social: Facebook / Open Graph -->
         <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
         <meta property="og:site_name" content="{{ site.title }}" /> 
         <meta property="og:type" content="website" /> 
         <meta property="og:url" content="{{ site.url }}" />
-        <meta property="og:image" content="{{ site.url }}/img/sections-background/{{ page.image }}" />
+        <meta property="og:image" content="{% if page.image %}{{ site.url }}/img/sections-background/{{ page.image }} {% else %} {{ site.url }}/img/about-section/mashup.jpg {% endif %}" />
         <meta property="og:description" content="{{ description }}" />
     {% endif %}
 
