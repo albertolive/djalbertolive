@@ -40,7 +40,7 @@
         {% if page.soundcloud %}
             {% assign player = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" | append: {{page.soundcloud}} %}
         {% elsif page.youtube %}
-            {% assign player = "http://www.youtube.com/embed/" | append: {{page.youtube}} %}
+            {% assign player = "https://www.youtube.com/embed/" | append: {{page.youtube}} %}
         {% endif %}
 
         <link rel="image_src" href="{{ site.url }}/img/mashups/banner/{{ page.image }}" />
@@ -87,7 +87,7 @@
         <meta name="keywords" content="{{ site.metaKeywords }}">
 
         <!-- Social: Twitter -->
-        <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="{{ site.twitterAccount }}">
         <meta name="twitter:creator" content="{{ site.twitterAccount }}">
         <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
