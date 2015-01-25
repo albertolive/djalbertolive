@@ -13,6 +13,12 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "Dj Albert Olivé - Mashups, Remixes and Top Trance Mix."
 email: "djalbertolive@gmail.com"
 description: "Albert Olivé (Pd Oli - La Factoria - Disco Inferno) is a deejay and producer from Barcelona. Listen his remixes, mashups and his radio show Top Trance Mix."
+newsDescription: "In this section you will find the latest news of Dj Albert Olivé. Tour dates, new Mashups / Bootlegs, the Top Trance Mix Radio show, and many more."
+biographyDescription: "This is Albert Olivé official Biography. In this section you will learn about his life, his styles, where does he played and many more."
+scheduleDescription: "Here you will find Albert Olivé upcoming concerts or festivals. Don't miss any of them by tracking it."
+mashupsDescription: "This is where you will find all Albert Olivé Mashups / Bootlegs. Listen and download all of them directly from this page."
+toptrancemixDescription: "At first, Albert Olivé has his own radio show called Top Trance Mix. This show is over but you can listen whenever you want."
+contactDescription: "Want to keep in touch with Dj Albert Olivé, send him a message and he will answer you."
 baseurl: ""
 url: "http://www.djalbertolive.com"
 permalink: "/news/:title"
@@ -31,9 +37,6 @@ organizerLink: "http://www.djalbertolive.com"
 # Head
 metaKeywords: "albert olive, rumba, dance, electronic, mashup, bootleg, trance, progressive, Top Trance Mix, reggaeton"
 twitterAccount: "@djalbertolive"
-socialImageSrcGooglePlus: "/img/logo/logo_social_media.png"
-socialImageSrcTwitter: "/img/logo/logo_social_media.png"
-socialImageSrcFacebook: "/img/logo/logo_social_media.png"
 
 # Navigation
 navigationLinks:
