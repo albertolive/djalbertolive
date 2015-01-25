@@ -63,7 +63,7 @@
         <!-- Social: Facebook / Open Graph -->
         <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
         <meta property="og:site_name" content="{{ site.title }}" />
-        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="og:image" content="{{ site.url }}/img/mashups/banner/{{ page.image }}" />
         <meta property="og:description" content="{{ page.seoDescription }}" />
         {% if page.videoSeo %}
@@ -98,7 +98,7 @@
         <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
         <meta property="og:site_name" content="{{ site.title }}" /> 
         <meta property="og:type" content="website" /> 
-        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="og:image" content="{% if page.image %}{{ site.url }}/img/sections-background/{{ page.image }} {% else %} {{ site.url }}/img/about-section/mashup.jpg {% endif %}" />
         <meta property="og:description" content="{{ description }}" />
     {% endif %}
