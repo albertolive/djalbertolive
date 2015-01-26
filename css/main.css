@@ -2875,7 +2875,7 @@ nav li a.current,nav li a:hover {
 .explore {
     margin-left: -16px;
     position: absolute;
-    bottom: -25px;
+    bottom: 35px;
     left: 50%;
     -webkit-animation: callToAction 3.5s linear 0s infinite;
     animation: callToAction 3.5s linear 0s infinite;
