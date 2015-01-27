@@ -1,5 +1,6 @@
 
 User-agent: *
+Disallow:
 
 Sitemap: http://www.djalbertolive.com/sitemap.xml
 
