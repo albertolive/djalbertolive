@@ -75,10 +75,16 @@
             <meta property="og:video:height" content="480" />
             <meta property="og:video:tag" content="{{page.metaKeywords}}">
         {% else %}
-            <meta property="og:type" content="music.song" />
+            <meta property="og:type" content="soundcloud:sound" />
+            <meta property="medium" content="video" />
+            <meta property="og:video:type" content="application/x-shockwave-flash" />
+            <meta property="og:video:height" content="98" />
+            <meta property="og:video:width" content="460" />
+            <meta property="og:video" content="http://player.soundcloud.com/player.swf?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F{{page.soundcloud}}&amp;auto_play=false&amp;show_artwork=true&amp;visual=true&amp;color=3b5998&amp;origin=facebook" />
+            <!-- <meta property="og:type" content="music.song" />
             <meta property="og:audio:type" content="audio/mpeg" />
             <meta property="og:audio" content="http://{{page.audioSeo}}" />
-            <meta property="og:title" content="{{page.title}}" />
+            <meta property="og:title" content="{{page.title}}" /> -->
         {% endif %}
 
     {% else %}
