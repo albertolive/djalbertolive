@@ -10,49 +10,16 @@
                             <div class="lily-head" data-toggle="modal" data-target="#speakerDetail-{{ mashup.id }}">
                                 <figure class="waves-effect waves-block waves-light" style="background-image: url({{ site.baseurl | append: '/img/mashups/lofi/' | append: mashup.thumbnailUrl }})">
                                     <div class="overlay solid-overlay"></div>
-                                    {% if mashup.ribbon != null %}
-                                    <ul class="ribbon-wrapper">
-                                        {% for ribbon in mashup.ribbon %}
-                                        <li class="{{ ribbon["abbr"] | downcase }}">
-                                            <p class="ribbon abbr">{{ ribbon["abbr"] }}</p>
-                                            <p class="ribbon full-title">{{ ribbon["title"] }}</p>
-                                        </li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                    {% if site.showSessions %}
-                                    <!--<figcaption>
-                                        <h2 class="name">{{ mashup.name }} <span>{{ mashup.surname }}</span></h2>
-                                        <p class="position">{{ mashup.company }}</p>
-                                    </figcaption>-->
-                                    {% endif %}
                                 </figure>
                             </div>
                             <div class="lily-bottom">
-                                <ul class="slider">
-                                        <h2 class="name truncate"><b>{{ mashup.name }}</b> <br><span>{{ mashup.surname }}</span></h2>
-                                        <p class="position truncate">{{ mashup.company }}</p>
-                                    {% assign sessionsNumber = 0 %}
-                                    {% if site.showSessions %} 
-                                        {% for session in site.data.sessions %} 
-                                            {% for session_speaker in session.speakers %} 
-                                                {% if session_speaker == mashup.id %}
-                                                {% assign sessionsNumber = sessionsNumber | plus: 1 %}
-                                                    <!-- <li class="title slider-item animated fadeInRight hidden">{{ mashup.title }}</li> -->
-                                                {% endif %} 
-                                            {% endfor %} 
-                                        {% endfor %} 
-                                    {% else %}
-                                        <!--<h2 class="name">{{ mashup.name }} <span></span></h2>
-                                        <p class="position">{{ mashup.surname }}</p>-->
-                                    {% endif %}
-                                </ul>
+                                <h2 class="name truncate"><b>{{ mashup.name }}</b> <br><span>{{ mashup.surname }}</span></h2>
+                                <p class="position truncate">{{ mashup.company }}</p>
                             </div>
                         </div>
                     </div>
                 {% endfor %}
             </div> 
-            <!-- <a href="{{ site.c4pUrl }}" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Become a speaker</a> -->     
         </div>
     </div>
 </section>
