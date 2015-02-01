@@ -4491,6 +4491,10 @@ iframe {
     width: 100%;
 }
 
+.toptrancemixIframe {
+    height: 800px !important;
+} 
+
 @media print {
     * {
         text-shadow: none !important;
