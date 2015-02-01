@@ -83,7 +83,7 @@ followMeTitle: "Follow me"
 # Subscribe Block
 subscribeImage: "subscribe.jpg"
 subscribeTitle: "Subscribe for updates"
-subscribeAction: "http://djalbertolive.us3.list-manage2.com/subscribe?u=66b4fa08073c3baf4dbe43f9c&id=3f1a5a255c"
+subscribeAction: "http://djalbertolive.us3.list-manage2.com/subscribe?u=66b4fa08073c3baf4dbe43f9c&amp;id=3f1a5a255c"
 subscribeInfo: "Subscribe to Albert Olivé newsletter to be the first to listen his newest mashups"
 
 # Footer
