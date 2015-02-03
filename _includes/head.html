@@ -43,7 +43,7 @@
             {% assign player = "https://www.youtube.com/embed/" | append: {{page.youtube}} %}
         {% endif %}
 
-        <link rel="image_src" href="{{ site.url }}/img/mashups/lofi/{{ page.image }}"/>
+        <link rel="image_src" href="{{ site.url }}/img/mashups/hifi/{{ page.image }}"/>
         <link rel="video_src" href="http://{{page.videoSeo}}"/>
         <meta name="video_height" content="480"/>
         <meta name="video_width" content="640"/>
@@ -58,13 +58,13 @@
         <meta name="twitter:player" content="{{ player }}">
         <meta name="twitter:player:width" content="640">
         <meta name="twitter:player:height" content="480">
-        <!--  <meta name="twitter:image:src" content="{{ site.url }}/img/mashups/lofi/{{ page.image }}"> -->
+        <!--  <meta name="twitter:image:src" content="{{ site.url }}/img/mashups/hifi/{{ page.image }}"> -->
 
         <!-- Social: Facebook / Open Graph -->
         <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/> 
         <meta property="og:site_name" content="{{ site.title }}"/>
         <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ site.url }}/img/mashups/lofi/{{ page.image }}"/>
+        <meta property="og:image" content="{{ site.url }}/img/mashups/hifi/{{ page.image }}"/>
         <meta property="og:description" content="{{ page.seoDescription }}"/>
         {% if page.videoSeo %}
             <meta property="og:type" content="video"/>
