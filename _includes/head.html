@@ -29,6 +29,13 @@
     {% endif %}
 
     <meta name="description" content="{{ description }}">
+    <!-- Actualitza l'etiqueta html perquè inclogui els atributs itemscope i itemtype. -->
+    <html itemscope itemtype="http://schema.org/Person">
+
+    <!-- Afegeix les tres etiquetes següents a la capçalera. -->
+    <meta itemprop="name" content="{{ aboutTitle }}">
+    <meta itemprop="description" content="{{ description }}">
+    <meta itemprop="image" content="http://www.djalbertolive.com/img/about-section/about.jpg">
 
     {% if page.type == "mashup" %}
         <meta name="keywords" content="{{ page.metaKeywords }}">
