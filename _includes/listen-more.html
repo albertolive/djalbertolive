@@ -78,14 +78,14 @@
                 {% if nextMashup and previousMashup %}
                     <div class="col-md-6 col-xs-6">
                         <a href="{{ site.baseurl }}/mashup/{{nextMashup.link}}/">
-                            <img src="{{site.baseurl}}/img/other/next.png">
+                            <img src="{{site.baseurl}}/img/other/next.png" alt="next">
                         </a>
                     </div>
                 {% else %}
                     {% if nextMashup %}
                         <div class="col-md-12 col-xs-12">
                             <a href="{{ site.baseurl }}/mashup/{{nextMashup.link}}/">
-                                <img src="{{site.baseurl}}/img/other/next.png">
+                                <img src="{{site.baseurl}}/img/other/next.png" alt="next">
                             </a>
                         </div>
                     {% endif %}
@@ -93,14 +93,14 @@
                 {% if previousMashup and nextMashup %}
                     <div class="col-md-6 col-xs-6">
                         <a href="{{ site.baseurl }}/mashup/{{previousMashup.link}}/">
-                            <img src="{{site.baseurl}}/img/other/previous.png">
+                            <img src="{{site.baseurl}}/img/other/previous.png" alt="previous">
                         </a>
                     </div>
                 {% else %}
                     {% if previousMashup %}
                         <div class="col-md-12 col-xs-12">
                             <a href="{{ site.baseurl }}/mashup/{{previousMashup.link}}/">
-                                <img src="{{site.baseurl}}/img/other/previous.png">
+                                <img src="{{site.baseurl}}/img/other/previous.png" alt="previous">
                             </a>
                         </div>
                     {% endif %}
