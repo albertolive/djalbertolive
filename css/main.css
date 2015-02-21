@@ -5223,6 +5223,12 @@ iframe {
     }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1470px) {
+
+    #mashupInfo .col-lg-8 {
+        width: 100%;
+    }
+}
 @media (min-width: 1200px) {
     .container {
         width: 1170px;

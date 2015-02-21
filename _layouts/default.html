@@ -128,11 +128,9 @@ layout: compress
         {% endif %} 
     </script>
     <script src="{{ "/js/scripts.min.js" | prepend: site.baseurl }}"></script>
-    {% if page.type == mashup %}
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eaeea0e3be82025" async="async"></script>
 
-
+    {% if page.type == 'mashup' %}
+          <script src="{{ "/js/myFunctions.js" | prepend: site.baseurl }}"></script>
     {% endif %}
     {% if page.permalink == '/schedule/' %}
         <script type="text/javascript">
