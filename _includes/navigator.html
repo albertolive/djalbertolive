@@ -1,0 +1,61 @@
+<!-- Begin Latest News Section -->
+<section id="navigator" class="navigator">
+	<div class="content-wrapper">
+		<div class="row">
+            {% for mashup in site.data.mashups %}
+                {% if mashup.id == page.id %}
+                    {% assign selectedMashup = mashup %}
+                    {% assign next = selectedMashup.id | plus:1 %}
+                    {% assign previous = selectedMashup.id | minus:1 %}
+                {% endif %}
+            {% endfor %}
+            {% for mashup in site.data.mashups %}
+                {% if mashup.id == next %}
+                    {% assign nextMashup = mashup %}
+                {% endif%}
+                {% if mashup.id == previous %}
+                    {% assign previousMashup = mashup %}
+                {% endif%}
+            {% endfor %}
+            {% if nextMashup and previousMashup %}
+                <div class="col-md-3 col-xs-3">
+                    <a href="{{ site.baseurl }}/mashup/{{nextMashup.link}}/">
+                        <img src="{{site.baseurl}}/img/other/next.png" alt="next">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="truncate centerNavigator">{{nextMashup.name}} - {{nextMashup.surname}}</div>
+                </div>
+            {% else %}
+                {% if nextMashup %}
+                    <div class="col-md-12 col-xs-12">
+                        <a href="{{ site.baseurl }}/mashup/{{nextMashup.link}}/">
+                            <img src="{{site.baseurl}}/img/other/next.png" alt="next">
+                        </a>
+                        <div class="truncate">{{nextMashup.name}} - {{nextMashup.surname}}</div>
+                    </div>
+                {% endif %}
+            {% endif %}
+            {% if previousMashup and nextMashup %}
+                <div class="col-md-3 col-xs-3">
+                    <div class="truncate centerNavigator">{{previousMashup.name}} - {{previousMashup.surname}}</div>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="{{ site.baseurl }}/mashup/{{previousMashup.link}}/">
+                        <img src="{{site.baseurl}}/img/other/previous.png" alt="previous">
+                    </a>
+                </div>
+            {% else %}
+                {% if previousMashup %}
+                    <div class="col-md-12 col-xs-12">
+                        <div class="truncate">{{previousMashup.name}} - {{previousMashup.surname}}</div>
+                        <a href="{{ site.baseurl }}/mashup/{{previousMashup.link}}/">
+                            <img src="{{site.baseurl}}/img/other/previous.png" alt="previous">
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!-- End Latest News Section -->

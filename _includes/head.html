@@ -32,6 +32,10 @@
 
     {% if page.type == "mashup" %}
         <meta name="keywords" content="{{ page.metaKeywords }}">
+        <meta name="pubdate" content="{{ page.date }}">
+        <meta name="last_updated" content="{{ page.date }}">
+        <meta name="dateCreated" content="{{ page.date }}">
+        <meta itemprop="datePublished" content="{{ page.date }}" id="date">
 
         {% if page.soundcloud %}
             {% assign player = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" | append: {{page.soundcloud}} %}
@@ -133,4 +137,5 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      
   </head>
