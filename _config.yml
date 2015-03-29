@@ -44,7 +44,6 @@ twitterAccount: "@djalbertolive"
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
- - {permalink: "/news/", text: "News"}
  - {permalink: "/biography/", text: "Biography"}
  - {permalink: "/schedule/", text: "Schedule"}
  - {permalink: "/mashups/", text: "Mashups"}
