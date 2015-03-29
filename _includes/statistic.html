@@ -11,6 +11,7 @@
 
                     var query = new Parse.Query("total");
                       query.descending("plays");
+                      query.limit(4);
                       query.find().then(function(totalCollection) {
                           for (var i = 0; i < 4; i++) {
                               var data = [];
@@ -21,7 +22,7 @@
 
                                 <div class="col-md-{{ colWidth }} col-xs-6">
                                     <a href="{{ site.baseurl }}/mashup/'+ data.link +'" style="text-decoration: none !important;">
-                                    <div class="overlay-link same-height-wrapper counter animated" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                    <div class="overlay-link same-height-wrapper counter animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
                                         <div class="stat"><span class="timer" data-from="0" data-to='+ data.plays +'>' + data.plays + '</span></div>
                                         <div class="stat-views">plays</div>
                                            <div class="stat-info truncate">' + name + '</div>
