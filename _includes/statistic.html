@@ -5,22 +5,39 @@
 		<div class="col-lg-10 col-lg-offset-1">
             <h3>{{ site.statisticTitle }}</h3>
 			{% assign animationDelay = 0 %}
-            {% for statistic in site.statisticBlock %}
-            {% assign colWidth = 12 | divided_by: forloop.length %}
-                <div class="col-md-{{ colWidth }} col-xs-6"> 
-                    <a href="{{ site.baseurl }}{{statistic.link}}" style="text-decoration: none !important;">
-                    <div class="overlay-link same-height-wrapper counter animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
-                        <div class="stat"><span class="timer" data-from="0" data-to="{{ statistic.count}}">{{ statistic.count}}</span></div>
-                        <div class="stat-views">{{ statistic.specialCharacter}}</div>
-    					   <div class="stat-info truncate">{{ statistic.info}}</div>
-    					   <p class="small truncate">{{ statistic.detail}}</p>
-                    </div>
-                    </a>
-                </div>
+            {% assign colWidth = 12 | divided_by: 4 %}
+            <script type="text/javascript">
+                    Parse.initialize("7lOHcwVNB0ooQ0NA9N2MBAVljYWQEj5sij52S4QE", "UxZq7CTocxcTXwgXU1hQWkQL6lHNygO3WM6zrM7u");
+
+                    var query = new Parse.Query("total");
+                      query.descending("plays");
+                      query.find().then(function(totalCollection) {
+                          for (var i = 0; i < 4; i++) {
+                              var data = [];
+                              data = totalCollection[i].toJSON();
+                              var name = data.title.split("-", 1);
+                              var title = data.title.replace('(Albert Olive Mashup)','').replace(name, '').replace('- ', '');
+                             var html = '
+
+                                <div class="col-md-{{ colWidth }} col-xs-6">
+                                    <a href="{{ site.baseurl }}/mashup/'+ data.link +'" style="text-decoration: none !important;">
+                                    <div class="overlay-link same-height-wrapper counter animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
+                                        <div class="stat"><span class="timer" data-from="0" data-to='+ data.plays +'>' + data.plays + '</span></div>
+                                        <div class="stat-views">plays</div>
+                                           <div class="stat-info truncate">' + name + '</div>
+                                           <p class="small truncate">' + title + '</p>
+                                    </div>
+                                    </a>
+                                </div>
+                             ';
+                             $('#totalPlays').append(html);
+                          };
+                      });
+                </script>
+                <div id="totalPlays"></div>
             {% assign animationDelay = animationDelay | plus:500 %}
             {% assign check = forloop.index | modulo:2 %}
             {% if check == 0 %} <div class="clearfix visible-xs"></div> {% endif %}
-            {% endfor %}
 		</div>
 	</div>
 </section>
