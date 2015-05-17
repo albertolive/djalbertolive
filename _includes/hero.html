@@ -2,8 +2,11 @@
 <section id="top-section-hero" class="top-section-hero top-section image-section" style="">
     {% include navigation.html %}
     <div class="content-wrapper videoNav">
-        <iframe src="https://youtube.com/embed/{{site.newest}}?autoplay=1&amp;autohide=1&amp;theme=dark&amp;color=white&amp;showinfo=1&amp;rel=0">
-        </iframe>
+        {%if newestVimeo %}
+        <iframe src="https://youtube.com/embed/{{site.newestYoutube}}?autoplay=1&amp;autohide=1&amp;theme=dark&amp;color=white&amp;showinfo=1&amp;rel=0"></iframe>
+        {%elsif newestVimeo %}
+        <iframe src="//player.vimeo.com/video/{{site.newestVimeo}}?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        {% endif %}
         <a href="#about" class="explore">
             <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
                 <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-arrow-down"></use>
