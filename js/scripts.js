@@ -3,7 +3,9 @@
         $(window).load(function() {
             $('#st-container').removeClass('disable-scrolling');
             $('#loading-animation').fadeOut();
-            $('#preloader').delay(350).fadeOut(800);
+            setTimeout(function() {
+                $('#preloader').delay(350).fadeOut(800);
+            }, 1000);
             initGooglePlus();
             equalheight('.same-height');
         });
