@@ -1,5 +1,8 @@
 (function($) {
     $(document).ready(function() {
+        setTimeout(function() {
+            $('#preloader').delay(350).fadeOut(800);
+        }, 1000);
         $(window).load(function() {
             $('#st-container').removeClass('disable-scrolling');
             $('#loading-animation').fadeOut();
