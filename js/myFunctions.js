@@ -47,9 +47,3 @@
     rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
     s.parentNode.insertBefore(rw, s);
     }(document, new Date(), "script", "rating-widget.com/"));
-
-$(document).ready(function() {
-    setTimeout(function() {
-        $('#preloader').delay(350).fadeOut(800);
-    }, 1000);
-}
