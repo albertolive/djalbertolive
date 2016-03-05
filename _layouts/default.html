@@ -145,7 +145,11 @@ layout: compress
     {% include schema-event.html %}
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#preloader').delay(350).fadeOut(800);
+            $('#st-container').removeClass('disable-scrolling');
+            $('#loading-animation').fadeOut();
+            setTimeout(function() {
+                $('#preloader').delay(350).fadeOut(800);
+            }, 1000);
         });
     </script>
 </body>
