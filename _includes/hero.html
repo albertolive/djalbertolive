@@ -3,7 +3,7 @@
     {% include navigation.html %}
     <div class="content-wrapper videoNav">
         {%if newestYoutube != '' %}
-            <iframe src="https://youtube.com/embed/{{site.newestYoutube}}?autoplay=1&amp;autohide=1&amp;theme=dark&amp;color=white&amp;showinfo=1&amp;rel=0"></iframe>
+            <iframe src="https://youtube.com/embed/{{site.newestYoutube}}?autoplay=0&amp;autohide=1&amp;theme=dark&amp;color=white&amp;showinfo=1&amp;rel=0"></iframe>
         {%elsif newestVimeo != '' %}
             <iframe src="//player.vimeo.com/video/{{site.newestVimeo}}?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         {% endif %}
