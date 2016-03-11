@@ -8,7 +8,7 @@
             {% assign colWidth = 12 | divided_by: 4 %}
             <script type="text/javascript">
                     Parse.initialize("7lOHcwVNB0ooQ0NA9N2MBAVljYWQEj5sij52S4QE", "UxZq7CTocxcTXwgXU1hQWkQL6lHNygO3WM6zrM7u", "XpQphDljyeHak3hRrzvDdtf0FnEPC7nwPmUv7QMB");
-
+                    Parse.serverURL = 'https://parseapi.back4app.com';
                     var query = new Parse.Query("total");
                       query.descending("plays");
                       query.limit(4);
